@@ -1,25 +1,19 @@
-#include <stdio.h>
+#include<stdio.h>
 /**
- *  * main - entry point
- *   *
- *    * Return: alway returns 0
+ *
+ *  * main - Entry point
+ *    * Return: Always 0 (Success)
+ *
 */
 int main(void)
 {
-	unsigned char a = '0';
-	int i;
+	int digit;
 	
-	for (i = 0; i < 10; i++)
-	{
-	putchar(a);
-	a++;
-	a = '1';
-	for (i = 0; i < 6; i++)
-	{
-	putchar('0' + a);
-	a++;
-	}
+	for (digit = 48; digit != 58; digit++)
+	putchar(digit);
+	for (digit = 97; digit != 103; digit++)
+	putchar(digit);
 	putchar('\n');
 	return (0);
-	}
+
 }
