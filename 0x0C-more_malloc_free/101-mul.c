@@ -139,10 +139,10 @@ void get_prod(char *prod, char *mult, int digit, int zeroes)
  *   * @final_prod: The buffer storing the running final product.
  *    * @next_prod: The next product to be added.
  *     * @next_len: The length of next_prod.
- *      * /
- *      void add_nums(char *final_prod, char *next_prod, int next_len)
- *      {
- *      int num, tens = 0;
+ */
+ void add_nums(char *final_prod, char *next_prod, int next_len)
+ {
+ int num, tens = 0;
  *
  *      while (*(final_prod + 1))
  *      final_prod++;
@@ -173,10 +173,10 @@ void get_prod(char *prod, char *mult, int digit, int zeroes)
  *      }
  *
  *      if (tens)
- *      *final_prod = (tens % 10) + '0';
+       *final_prod = (tens % 10) + '0';
  *      }
  *
- */**
+ /**
  * main - Multiplies two positive numbers.
  *  * @argv: The number of arguments passed to the program.
  *   * @argc: An array of pointers to the arguments.
