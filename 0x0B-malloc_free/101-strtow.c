@@ -5,7 +5,7 @@
  * *@str: string to be splitted
  * *
  * *Return: pointer to the array of splitted words
- * */
+ */
 
 char **strtow(char *str)
 {
@@ -28,7 +28,7 @@ char **strtow(char *str)
 				{
 					while (temp < size)
 					{
-						split[j][temp] = str[(i - size) +temp];
+						split[j][temp] = str[(i - size) + temp];
 						temp++;
 					}
 					split[j][temp] = '\0';
@@ -57,7 +57,7 @@ char **strtow(char *str)
  * *@str: string to be used
  * *
  * *Return: number of words
- * */
+ */
 int num_words(char *str)
 {
 	int i = 0, words = 0;
@@ -86,7 +86,7 @@ int num_words(char *str)
  * *@str: string to be counted
  * *
  * * Return: length of the string
- * */
+ */
 
 int len(char *str)
 {
