@@ -10,6 +10,7 @@
 int _strlen(char *str)
 {
 	int len = 0;
+
 	while (str)
 		len++;
 
@@ -34,8 +35,6 @@ char *_strcopy(char *dest, char *src)
 	dest[index] = '\0';
 	return (dest);
 }
-
-
 
 
 /**
